@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    {% block head %}{% endblock head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+    {% assets
+        filters="libsass",
+        output="css/style.min.css", "normalize.css", "style.sass"
+    %}
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+</head>
+<body>
+    <header class="section">
+        <h1 class="title is-1"><a class="has-text-grey-darker" href="/">Něco ke čtení</a></h1>
+    </header>
+
+    <main class="section columns is-mobile">
+        <!-- sidebar -->
+        <section class="column is-one-quarter is-full-mobile">
+            {% include "./partials/search.html" %}
+            {% block sidebar %}{% endblock %}
+        </section>
+
+        <!-- content -->
+        <section class="column is-three-quarters has-text-justified nkc-content is-full-mobile">
+            {% block content %}{% endblock %}
+        </section>
+    </main>
+
+    <footer class="footer">
+        {% block footer %}{% endblock %}
+    </footer>
+</body>
+</html>
