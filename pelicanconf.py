@@ -36,6 +36,7 @@ TAG_URL = 'tags/{slug}'
 TAG_SAVE_AS = 'tags/{slug}.html'
 AUTHOR_SAVE_AS = False
 AUTHORS_SAVE_AS = None
+OUTPUT_PATH = 'site/'
 
 THEME = './themes/default'
 PLUGIN_PATHS = ['./plugins']
