@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{{ super() }}
 
 {% block head %}
     <meta name="description" content="{{article.category}}: {{article.title}}" />
@@ -10,7 +9,7 @@
 
 {% block sidebar %}
 
-    <h3 class="title is-4 has-text-grey-light">Další knihy autora</h3>
+    <h3 class="title is-4 is-size-5-mobile has-text-grey-light">Další knihy autora</h3>
 
     {% if articles %}
         <section class="content">
@@ -23,7 +22,7 @@
     {% endif %}
 
 
-    <h3 class="title is-4 has-text-grey-light">Další podobné knihy</h3>
+    <h3 class="title is-4 is-size-5-mobile has-text-grey-light">Další podobné knihy</h3>
     {% if articles %}
         <section class="content has-overflow has-height-200">
             {% for a in articles|rejectattr('title', 'eq', article.title) if a.tags|same_as(article.tags) %}

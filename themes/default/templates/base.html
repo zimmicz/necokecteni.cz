@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    {% block head %}{% endblock head %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block head %}{% endblock %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
     {% assets
@@ -14,9 +14,9 @@
         <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
 </head>
-<body>
+<body class="is-size-7-mobile">
     <header class="section">
-        <h1 class="title is-1"><a class="has-text-grey-darker" href="/">Něco ke čtení</a></h1>
+        <h1 class="title is-1 is-size-5-mobile"><a class="has-text-grey-darker" href="/">Něco ke čtení</a></h1>
     </header>
 
     <main class="section columns is-mobile">
