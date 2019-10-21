@@ -303,6 +303,9 @@ template {
 [hidden] {
   display: none; }
 
+.tag, .button {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -1462,7 +1465,7 @@ a.box:active {
   background-color: white;
   border-color: #dbdbdb;
   border-width: 1px;
-  color: #363636;
+  color: #262626;
   cursor: pointer;
   justify-content: center;
   padding-bottom: calc(0.375em - 1px);
@@ -7327,9 +7330,6 @@ label.panel-block:hover {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-.tag, .button {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
-
 header {
   border-bottom: 5px dotted #ec9f05;
   margin-left: 3.5rem;
@@ -7359,3 +7359,9 @@ p {
     flex-direction: column-reverse; }
   .column {
     width: 100% !important; } }
+
+.button.is-primary {
+  color: #262626; }
+
+.tag:hover, .button:hover {
+  color: white; }
