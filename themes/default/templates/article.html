@@ -14,7 +14,7 @@
     {% if articles %}
         <section class="content">
             {% for a in articles if a.category == article.category and a.title != article.title %}
-                <a class="has-text-primary is-block" href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a>
+                <a class="is-block" href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a>
             {% else %}
                 <p>Zatím nemáme žádné další recenze.</p>
             {% endfor %}
@@ -26,7 +26,7 @@
     {% if articles %}
         <section class="content has-overflow has-height-200">
             {% for a in articles|rejectattr('title', 'eq', article.title) if a.tags|same_as(article.tags) %}
-                <a class="has-text-primary is-block" href="{{ SITEURL }}/{{ a.url }}">{{a.author}}: {{ a.title }}</a>
+                <a class="is-block" href="{{ SITEURL }}/{{ a.url }}">{{a.author}}: {{ a.title }}</a>
             {% else %}
                 <p>Zatím nemáme žádné další recenze.</p>
             {% endfor %}
