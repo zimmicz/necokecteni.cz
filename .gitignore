@@ -4,3 +4,4 @@ bin/dropbox/settings.py
 dropbox_tmp
 venv
 site
+*.pyc

@@ -4,6 +4,8 @@ cd ~/clone && \
 sed -i '/pkg-resources/d' requirements.txt && \
 pip install -r requirements.txt && \
 yarn install && \
+~/clone/bin/codeship/extract.py && \
+~/clone/bin/codeship/load.py && \
 make publish && \
 
 git fetch origin "+refs/heads/*:refs/remotes/origin/*" && \

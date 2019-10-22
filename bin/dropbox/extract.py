@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # coding=utf-8
 
 import json
@@ -73,6 +73,7 @@ def download_doc(doc):
         r = requests.post(DROPBOX_DOWNLOAD_DOC_URL, headers=headers)
         title = json.loads(r.headers['Dropbox-Api-Result'])['title']
         safe_title = sanitize(title)
+        print('Downloading {}...'.format(safe_title))
         safe_author = sanitize(doc['author'])
         filepath = '{}/{}/{}.md'.format(PELICAN_TEMP_FOLDER, safe_author, safe_title)
 
