@@ -7,14 +7,13 @@ yarn install
 make publish
 
 git fetch origin "+refs/heads/*:refs/remotes/origin/*"
+git remote set-branches --add origin ${REMOTE_BRANCH}
+git checkout -- .
+git add -f site
+git commit -m "Deploy"
+git checkout ${REMOTE_BRANCH}
+git checkout master -- site
+rsync -av --progress site/ ./
+git reset HEAD site
+rm -rf site __pycache__ node_modules plugins
 
-# git add -f site && \
-# git commit -m "Deploy" && \
-# git subtree split --prefix site -b ${REMOTE_BRANCH} && \
-# git checkout -- . && \
-# git checkout ${REMOTE_BRANCH} && \
-# git branch --set-upstream-to=origin/${REMOTE_BRANCH} ${REMOTE_BRANCH}
-# git pull --ff-only origin && \
-# git push ${REMOTE_REPOSITORY} ${REMOTE_BRANCH} && \
-# git checkout master && \
-# git branch -D ${REMOTE_BRANCH} && \
