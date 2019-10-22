@@ -21,7 +21,7 @@ git checkout ${REMOTE_BRANCH} && \
 git checkout master -- site && \
 rsync -av --progress site/ ./ && \
 git reset HEAD site && \
-rm -rf site __pycache__ node_modules plugins && \
+rm -rf site __pycache__ node_modules plugins bin/dropbox/settings.py bin/dropbox/__pycache__ && \
 git add . && \
 git commit --allow-empty -m "deployed at $(date)" && \
 git push
