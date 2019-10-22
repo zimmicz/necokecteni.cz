@@ -8,8 +8,8 @@ make publish
 
 git fetch origin "+refs/heads/*:refs/remotes/origin/*"
 git remote set-branches --add origin ${REMOTE_BRANCH}
-git checkout -- .
 git add -f site
+git checkout -- .
 git commit -m "Deploy"
 git checkout ${REMOTE_BRANCH}
 git checkout master -- site
