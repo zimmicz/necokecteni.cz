@@ -40,7 +40,21 @@ OUTPUT_PATH = 'site/'
 
 THEME = './themes/default'
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['assets']
+PLUGINS = ['assets', 'sitemap']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'monthly',
+        'pages': 'monthly'
+    }
+}
 
 ASSET_SOURCE_PATHS = [
     'static/sass',
