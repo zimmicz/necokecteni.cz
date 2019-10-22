@@ -7,6 +7,7 @@
     {% block head %}{% endblock %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="{{title}}" href="feeds/atom.xml" />
 
     {% assets
         filters="libsass",
@@ -35,6 +36,9 @@
 
     <footer class="footer">
         {% block footer %}{% endblock %}
+        <p class="has-text-centered">
+            <a rel="alternate" type="application/rss+xml" href="{{SITEURL}}/feeds/atom.xml">RSS kanál</a>
+        </p>
     </footer>
 </body>
 </html>

@@ -14,7 +14,7 @@ from pelicanconf import *
 SITEURL = 'https://www.necokecteni.cz'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = 'feeds/atom.xml'
 CATEGORY_FEED_ATOM = None
 
 DELETE_OUTPUT_DIRECTORY = True
