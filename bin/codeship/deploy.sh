@@ -5,6 +5,7 @@ sed -i '/pkg-resources/d' requirements.txt && \
 pip install -r requirements.txt && \
 yarn install && \
 cd ~/clone/bin/dropbox && \
+cp settings.py.sample settings.py && \
 ./extract.py && \
 ./load.py && \
 cd - && \
