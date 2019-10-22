@@ -12,7 +12,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Prague'
 
-DEFAULT_LANG = 'cz'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -57,7 +57,7 @@ def same_as(a, b):
 
 def sort_by_surname(values):
     get_surname = lambda name: name.split(' ')[-1]
-    locale.setlocale(locale.LC_ALL, 'cs_CZ.UTF-8')
+    #locale.setlocale(locale.LC_ALL, 'cs_CZ.UTF-8') not available on codeship :(
     return sorted(
         values,
         key=cmp_to_key(lambda author, author2: locale.strcoll(get_surname(author[0].name), get_surname(author2[0].name)))

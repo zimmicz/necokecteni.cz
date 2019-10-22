@@ -1,6 +1,10 @@
 #!/bin/bash
 
 cd ~/clone
+sed -i '/pkg-resources/d' requirements.txt
+pip install -r requirements.txt
+yarn install
+make publish
 
 git subtree split --prefix site -b ${REMOTE_BRANCH} && \
 git checkout gh-pages && \
