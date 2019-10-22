@@ -6,7 +6,7 @@ pip install -r requirements.txt
 yarn install
 make publish
 
-git addd . && \
+git add . && \
 git commit -m "Deploy" && \
 git subtree split --prefix site -b ${REMOTE_BRANCH} && \
 git checkout ${REMOTE_BRANCH} && \
