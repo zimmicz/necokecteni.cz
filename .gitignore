@@ -3,3 +3,4 @@ node_modules
 bin/dropbox/settings.py
 dropbox_tmp
 venv
+site/theme/.webassets-cache
