@@ -18,5 +18,5 @@ rsync -av --progress site/ ./ && \
 git reset HEAD site && \
 rm -rf site __pycache__ node_modules plugins && \
 git add . && \
-git commit --alow-empty -m "deployed at $(date)" && \
+git commit --allow-empty -m "deployed at $(date)" && \
 git push
