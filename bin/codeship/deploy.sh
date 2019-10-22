@@ -4,8 +4,10 @@ cd ~/clone && \
 sed -i '/pkg-resources/d' requirements.txt && \
 pip install -r requirements.txt && \
 yarn install && \
-~/clone/bin/dropbox/extract.py && \
-~/clone/bin/dropbox/load.py && \
+cd ~/clone/bin/dropbox && \
+extract.py && \
+load.py && \
+cd - && \
 make publish && \
 
 git fetch origin "+refs/heads/*:refs/remotes/origin/*" && \
