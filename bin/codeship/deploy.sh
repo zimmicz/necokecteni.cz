@@ -17,6 +17,7 @@ git checkout master && \
 git add -f site && \
 git commit -m "deployed at $(date)" && \
 git checkout -- . && \
+rm -rf content && \
 git checkout ${REMOTE_BRANCH} && \
 git checkout master -- site && \
 rsync -av --progress site/ ./ && \
