@@ -1,10 +1,6 @@
 {% extends "./base.html" %}
 {{ super() }}
 
-{% block head %}
-    <meta name="robots" content="noindex,follow" />
-{% endblock %}
-
 {% block content %}
 <h2 class="title is-2 has-text-left">{{ category }}</h2>
     {% for article in articles_page.object_list %}
