@@ -1,5 +1,6 @@
 {% extends "./base.html" %}
 {{ super() }}
+{% block title %}{{ SITENAME }} | {{ category }}{% endblock %}
 
 {% block content %}
 <h2 class="title is-2 has-text-left">{{ category }}</h2>
