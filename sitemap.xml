@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/</loc>
-<lastmod>2020-04-13T11:50:47-00:00</lastmod>
+<lastmod>2020-05-27T11:30:06-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.necokecteni.cz/archives.html</loc>
-<lastmod>2020-04-13T11:50:47-00:00</lastmod>
+<lastmod>2020-05-27T11:30:06-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.necokecteni.cz/tags.html</loc>
-<lastmod>2020-04-13T11:50:47-00:00</lastmod>
+<lastmod>2020-05-27T11:30:06-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.necokecteni.cz/categories.html</loc>
-<lastmod>2020-04-13T11:50:47-00:00</lastmod>
+<lastmod>2020-05-27T11:30:06-00:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.necokecteni.cz/petra-soukupova/nejlepsi-pro-vsechny</loc>
+<lastmod>2020-05-27T00:00:00+02:00</lastmod>
+<changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -613,13 +620,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/alena-mornstajnova/tiche-roky</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/irvine-welsh/trainspotting</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -712,13 +712,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/authors/aldous-huxley</loc>
-<lastmod>2019-10-14T00:00:00+00:58</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/authors/alena-mornstajnova</loc>
 <lastmod>2019-10-14T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -1090,7 +1083,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/authors/petra-soukupova</loc>
-<lastmod>2019-10-14T00:00:00+00:58</lastmod>
+<lastmod>2020-05-27T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1215,6 +1208,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://www.necokecteni.cz/tags/21-stoleti</loc>
+<lastmod>2020-05-27T00:00:00+00:58</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.necokecteni.cz/tags/ceska-republika</loc>
+<lastmod>2020-05-27T00:00:00+00:58</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://www.necokecteni.cz/tags/20-stoleti</loc>
 <lastmod>2020-04-13T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
@@ -1224,13 +1231,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.necokecteni.cz/tags/kanada</loc>
 <lastmod>2020-04-13T00:00:00+00:58</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/tags/21-stoleti</loc>
-<lastmod>2020-01-06T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1265,13 +1265,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/tags/spojene-staty-americke</loc>
-<lastmod>2019-10-15T00:00:00+00:58</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/tags/ceska-republika</loc>
 <lastmod>2019-10-15T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
