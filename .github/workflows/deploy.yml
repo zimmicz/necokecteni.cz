@@ -1,10 +1,10 @@
 name: deploy
 on: [push]
+defaults:
+  run:
+    working-directory: ./
 jobs:
-  setup:
-    defaults:
-      run:
-        working-directory: ./
+  necokecteni:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -20,14 +20,8 @@ jobs:
       - name: install js dependencies
         run: npm install
 
-  etl:
-    defaults:
-      run:
-        working-directory: ./bin/dropbox
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
       - name: extract
         run: |
+          cd bin/dropbox
           ls -l
           ./extract.py
