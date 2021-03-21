@@ -19,3 +19,10 @@ jobs:
 
       - name: install js dependencies
         run: npm install
+
+  etl:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: extract
+        run: ./extract.py
