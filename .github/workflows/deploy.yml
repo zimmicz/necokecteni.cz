@@ -1,5 +1,8 @@
 name: deploy
 on: [push]
+defaults:
+  run:
+    working-directory: ./
 jobs:
   setup:
     runs-on: ubuntu-latest
