@@ -10,4 +10,4 @@ jobs:
           sed -i '/pkg-resources/d' requirements.txt
           pip install -r requirements.txt
           cd bin/dropbox
-          cp settings.py.sample settings.py
+          mv settings.py.sample settings.py
