@@ -28,5 +28,5 @@ jobs:
           DROPBOX_FOLDER_ID: ${{secrets.DROPBOX_FOLDER_ID}}
         run: |
           cd bin/dropbox
-          ls -l
           ./extract.py
+          ls -l ${{secrets.PELICAN_TEMP_FOLDER}}
