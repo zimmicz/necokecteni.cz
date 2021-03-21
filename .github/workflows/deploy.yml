@@ -25,6 +25,7 @@ jobs:
           PELICAN_TEMP_FOLDER: ${{secrets.PELICAN_TEMP_FOLDER}}
           PELICAN_CONTENT_FOLDER: ${{secrets.PELICAN_CONTENT_FOLDER}}
           DROPBOX_TOKEN: ${{secrets.DROPBOX_TOKEN}}
+          DROPBOX_FOLDER_ID: ${{secrets.DROPBOX_FOLDER_ID}}
         run: |
           cd bin/dropbox
           ls -l
