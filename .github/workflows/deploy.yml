@@ -28,4 +28,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: extract
-        run: ./extract.py
+        run: |
+          ls -l
+          ./extract.py
