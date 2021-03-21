@@ -84,7 +84,7 @@ def download_doc(doc):
             content = '\n'.join(r.content.decode('utf-8').split('\n')[1:])
             f.write(content)
     except Exception as e:
-        print(e)
+        print('Error: ', e)
         raise e
 
 create_temp_folder()

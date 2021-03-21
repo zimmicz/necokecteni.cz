@@ -29,4 +29,11 @@ jobs:
         run: |
           cd bin/dropbox
           ./extract.py
-          ls -l ${{secrets.PELICAN_TEMP_FOLDER}}
+
+      - load:
+        run: |
+          cd bin/dropbox
+          ./load.py
+
+      - publish:
+        run: make publish
