@@ -13,3 +13,6 @@ jobs:
           pip install -r requirements.txt
           cd bin/dropbox
           mv settings.py.sample settings.py
+
+      - name: install js dependencies
+        run: npm install
