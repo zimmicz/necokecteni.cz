@@ -1,11 +1,11 @@
 name: deploy
 on: [push]
-defaults:
-  run:
-    working-directory: ./
 jobs:
   necokecteni:
     runs-on: ubuntu-latest
+    env:
+      DROPBOX_TOKEN: ${{secrets.DROPBOX_TOKEN}}
+      DROPBOX_FOLDER_ID: ${{secrets.DROPBOX_FOLDER_ID}}
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -22,31 +22,16 @@ jobs:
 
       - name: extract
         env:
-          PELICAN_TEMP_FOLDER: ${{secrets.PELICAN_TEMP_FOLDER}}
-          PELICAN_CONTENT_FOLDER: ${{secrets.PELICAN_CONTENT_FOLDER}}
-          DROPBOX_TOKEN: ${{secrets.DROPBOX_TOKEN}}
-          DROPBOX_FOLDER_ID: ${{secrets.DROPBOX_FOLDER_ID}}
-        run: |
-          cd bin/dropbox
-          ./extract.py
+          PELICAN_TEMP_FOLDER: ${{github.workspace}}/temp
+          PELICAN_CONTENT_FOLDER: ${{github.workspace}}/content
+        run: ${{github.workspace}}/bin/dropbox/extract.py
 
       - name: load
         env:
-          PELICAN_TEMP_FOLDER: ${{secrets.PELICAN_TEMP_FOLDER}}
-          PELICAN_CONTENT_FOLDER: ${{secrets.PELICAN_CONTENT_FOLDER}}
-          DROPBOX_TOKEN: ${{secrets.DROPBOX_TOKEN}}
-          DROPBOX_FOLDER_ID: ${{secrets.DROPBOX_FOLDER_ID}}
-        run: |
-          cd bin/dropbox
-          ./load.py
-          cd ..
-          cd ..
-          ls -l
-          ls -l content
-
+          PELICAN_TEMP_FOLDER: ${{github.workspace}}/temp
+          PELICAN_CONTENT_FOLDER: ${{github.workspace}}/content
+        run: ${{github.workspace}}/bin/dropbox/load.py
 
       - name: publish
         run: |
-          ls -l
-          ls -l content
           make publish
