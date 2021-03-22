@@ -37,4 +37,8 @@ jobs:
           make publish
 
       - name: git
-        run: git status
+        run: |
+          git checkout -b pr
+          git add -f ${{github.workspace}}/site
+          git commit -m "deployed at $(date)"
+          git status
