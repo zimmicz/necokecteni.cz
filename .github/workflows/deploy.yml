@@ -39,6 +39,7 @@ jobs:
         run: |
           cd bin/dropbox
           ./load.py
+          ls -l ../../content
 
       - name: publish
         run: make publish
