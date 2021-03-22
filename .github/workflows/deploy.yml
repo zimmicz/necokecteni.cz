@@ -45,7 +45,11 @@ jobs:
 
       - name: git
         run: |
-          git checkout -b pr
-          git add -f ${{github.workspace}}/site
-          git commit -m "deployed at $(date)"
-          git status
+          git fetch
+          git checkout gh-pages
+
+          # git add -f ${{github.workspace}}/site
+          # git commit -m "deployed at $(date)"
+          # git checkout -- .
+          # git status
+          # git push --set-upstream origin pr
