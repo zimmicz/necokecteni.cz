@@ -39,7 +39,14 @@ jobs:
         run: |
           cd bin/dropbox
           ./load.py
-          ls -l ../../content
+          cd ..
+          cd ..
+          ls -l
+          ls -l content
+
 
       - name: publish
-        run: make publish
+        run: |
+          ls -l
+          ls -l content
+          make publish
