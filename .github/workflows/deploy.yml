@@ -10,6 +10,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: credentials
+        uses: oleksiyrudenko/gha-git-credentials@v2
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          name: 'Michal Zimmermann'
+          email: 'zimmi@tutanota.com'
+
       - name: install python dependencies
         run: |
           sed -i '/pkg-resources/d' requirements.txt
