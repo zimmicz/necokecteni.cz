@@ -54,4 +54,7 @@ jobs:
           rsync -av --progress ${{github.workspace}}/site/ ${{github.workspace}}
           rm -rf site __pycache__ node_modules plugins bin package-lock.json content
           git status
-          ls -l
+          git add .
+          git checkout -b book-review
+          git commit -m "deployed at $(date)"
+          git push --set-upstream origin book-review
