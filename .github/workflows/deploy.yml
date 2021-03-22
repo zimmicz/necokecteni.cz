@@ -46,10 +46,11 @@ jobs:
       - name: git
         run: |
           git fetch
+          git add -f ${{github.workspace}}/site
+          git checkout requirements.txt
+          git stash save
           git checkout gh-pages
-
-          # git add -f ${{github.workspace}}/site
-          # git commit -m "deployed at $(date)"
-          # git checkout -- .
-          # git status
-          # git push --set-upstream origin pr
+          git stash pop
+          rsync -av --progress ${{github.workspace}}/site/ ./
+          rm -rf site __pycache__ node_modules plugins bin
+          git status
