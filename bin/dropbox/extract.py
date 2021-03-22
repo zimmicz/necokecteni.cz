@@ -91,6 +91,6 @@ create_temp_folder()
 doc_ids = get_doc_ids()
 filtered_docs = filter_docs_by_folder_id(doc_ids)
 
-for doc in filtered_docs[0:1]:
+for doc in filtered_docs:
     download_doc(doc)
 
