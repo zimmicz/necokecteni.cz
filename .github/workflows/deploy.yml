@@ -31,6 +31,9 @@ jobs:
           ./extract.py
 
       - name: load
+        env:
+          PELICAN_TEMP_FOLDER: ${{secrets.PELICAN_TEMP_FOLDER}}
+          PELICAN_CONTENT_FOLDER: ${{secrets.PELICAN_CONTENT_FOLDER}}
         run: |
           cd bin/dropbox
           ./load.py
