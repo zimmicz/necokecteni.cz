@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/</loc>
-<lastmod>2020-05-27T11:30:06-00:00</lastmod>
+<lastmod>2021-03-23T14:26:18-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.necokecteni.cz/archives.html</loc>
-<lastmod>2020-05-27T11:30:06-00:00</lastmod>
+<lastmod>2021-03-23T14:26:18-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.necokecteni.cz/tags.html</loc>
-<lastmod>2020-05-27T11:30:06-00:00</lastmod>
+<lastmod>2021-03-23T14:26:18-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.necokecteni.cz/categories.html</loc>
-<lastmod>2020-05-27T11:30:06-00:00</lastmod>
+<lastmod>2021-03-23T14:26:18-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -81,13 +81,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/george-orwell/farma-zvirat</loc>
-<lastmod>2019-10-15T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/joseph-heller/hlava-xxii</loc>
 <lastmod>2019-10-15T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -103,13 +96,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/edward-albee/kdo-se-boji-virginie-woolfove</loc>
-<lastmod>2019-10-15T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/markus-zusak/kdyz-psi-placou</loc>
 <lastmod>2019-10-15T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -193,13 +179,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/ian-mcewan/cizinci-ve-meste</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/hermann-hesse/demian</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -263,13 +242,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/kurt-vonnegut/jatka-c-5-aneb-krizova-vyprava-deti</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/alexandr-solzenicyn/jeden-den-ivana-denisovice</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -312,28 +284,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/william-shakespeare/kral-lear</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/william-shakespeare/macbeth</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/gustave-flaubert/madame-bovaryova</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/milan-kundera/majitele-klicu</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -348,27 +299,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/vladislav-vancura/marketa-lazarova</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/kurt-vonnegut/matka-noc</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/guy-de-maupassant/matka-zrud-a-jine-povidky</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/kurt-vonnegut/mechanicke-piano</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -397,13 +327,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/david-herbert-lawrence/milenec-lady-chatterleyove</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/tomas-zmeskal/milostny-dopis-klinovym-pismem</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -445,20 +368,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/david-lodge/nejtissi-trest</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/ian-mcewan/nevinny</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/john-steinbeck/o-mysich-a-lidech</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -467,13 +376,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/bohumil-hrabal/obsluhoval-jsem-anglickeho-krale</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/isaac-asimov/ocelove-jeskyne</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -508,13 +410,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/ian-mcewan/pokani</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/anton-myrer/posledni-kabriolet</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -523,20 +418,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/franz-kafka/proces</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/petr-sabach/putovani-morskeho-kone</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/petr-sabach/ramon</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -564,13 +445,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/kurt-vonnegut/snidane-sampionu</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/truman-capote/snidane-u-tiffanyho</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -592,13 +466,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/ladislav-fuks/spalovac-mrtvol</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/annelies-verbeke/spi</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -607,13 +474,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/kingsley-amis/stastny-jim</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/emile-zola/tereza-raquinova</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -634,27 +494,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/milan-kundera/treti-sesit-smesnych-lasek</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/jerome-klapka-jerome/tri-muzi-ve-clunu</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/karel-capek/valka-s-mloky</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/john-webster/vevodkyne-z-amalfi</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -669,13 +508,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/emile-zola/zabijak</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/jan-balaban/zeptej-se-taty</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -684,27 +516,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/tomas-zmeskal/zivotopis-cernobileho-jehnete</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/markus-zusak/zlodejka-knih</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/petra-soukupova/zmizet</loc>
-<lastmod>2019-10-14T00:00:00+02:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/gabriel-chevallier/zvonokosy</loc>
 <lastmod>2019-10-14T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
@@ -838,13 +649,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/authors/friedrich-durrenmatt</loc>
-<lastmod>2019-10-14T00:00:00+00:58</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/authors/gabriel-chevallier</loc>
 <lastmod>2019-10-14T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -1306,20 +1110,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://www.necokecteni.cz/tags/17stoleti</loc>
-<lastmod>2019-10-14T00:00:00+00:58</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://www.necokecteni.cz/tags/17-stoleti</loc>
-<lastmod>2019-10-14T00:00:00+00:58</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://www.necokecteni.cz/tags/svycarsko</loc>
 <lastmod>2019-10-14T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
@@ -1356,6 +1146,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.necokecteni.cz/tags/belgie</loc>
+<lastmod>2019-10-14T00:00:00+00:58</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://www.necokecteni.cz/tags/17-stoleti</loc>
 <lastmod>2019-10-14T00:00:00+00:58</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
