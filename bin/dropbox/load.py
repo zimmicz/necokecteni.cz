@@ -4,7 +4,7 @@
 import glob
 import os
 import shutil
-from settings import PELICAN_CONTENT_FOLDER, PELICAN_TEMP_FOLDER, DROPBOX_DOWNLOAD_DOC_URL, DROPBOX_FOLDER_INFO_URL, DROPBOX_LIST_URL, DROPBOX_FOLDER_ID, DROPBOX_TOKEN
+from settings import PELICAN_CONTENT_FOLDER, PELICAN_TEMP_FOLDER
 
 for f in glob.glob('{}/**/*.md'.format(PELICAN_TEMP_FOLDER)):
     final_folder = '{}/{}'.format(PELICAN_CONTENT_FOLDER, f.split('/')[-2:-1][0])

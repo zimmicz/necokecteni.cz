@@ -1,0 +1,67 @@
+name: deploy
+on: [push]
+jobs:
+  necokecteni:
+    runs-on: ubuntu-latest
+    env:
+      DROPBOX_TOKEN: ${{secrets.DROPBOX_TOKEN}}
+      DROPBOX_FOLDER_ID: ${{secrets.DROPBOX_FOLDER_ID}}
+    steps:
+      - name: locales
+        run: |
+          sudo apt install language-pack-cs
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: credentials
+        uses: oleksiyrudenko/gha-git-credentials@v2
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          name: 'Michal Zimmermann'
+          email: 'zimmi@tutanota.com'
+
+      - name: install python dependencies
+        run: |
+          sed -i '/pkg-resources/d' requirements.txt
+          pip install -r requirements.txt
+          cd bin/dropbox
+          mv settings.py.sample settings.py
+
+      - name: install js dependencies
+        run: npm install
+
+      - name: extract
+        env:
+          PELICAN_TEMP_FOLDER: ${{github.workspace}}/temp
+          PELICAN_CONTENT_FOLDER: ${{github.workspace}}/content
+        run: ${{github.workspace}}/bin/dropbox/extract.py
+
+      - name: load
+        env:
+          PELICAN_TEMP_FOLDER: ${{github.workspace}}/temp
+          PELICAN_CONTENT_FOLDER: ${{github.workspace}}/content
+        run: ${{github.workspace}}/bin/dropbox/load.py
+
+      - name: publish
+        run: |
+          make publish
+
+      - name: update gh-pages
+        run: |
+          git fetch
+          git add -f ${{github.workspace}}/site
+          git checkout requirements.txt
+          git stash save
+          rm -rf content
+          git checkout gh-pages
+          git stash pop
+          rsync -av --progress ${{github.workspace}}/site/ ${{github.workspace}}
+          rm -rf site __pycache__ node_modules plugins bin package-lock.json content
+          git status
+          git add .
+
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: 'book-review'
+          base: 'gh-pages'
