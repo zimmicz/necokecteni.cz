@@ -1,0 +1,7 @@
+.sidebar ul {
+    list-style-type: none;
+    max-height: 50vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}

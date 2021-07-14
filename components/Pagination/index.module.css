@@ -1,0 +1,17 @@
+.pagination {
+    display: flex;
+}
+
+.pagination div {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.pagination div:first-child {
+    padding-right: 1rem;
+    text-align: right;
+}
+
+.pagination div:last-child {
+    padding-left: 1rem;
+}

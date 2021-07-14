@@ -1,0 +1,25 @@
+.tags {
+    margin: 0;
+    padding: .5rem 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tags li {
+    list-style-type: none;
+}
+
+.tags li a {
+    background-clip: padding-box;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0px 10px 2px;
+}
+
+.tags li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
