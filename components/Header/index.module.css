@@ -8,6 +8,7 @@
 
 .header h1 a {
     color: #FDFFFC;
+    text-decoration: none;
 }
 
 @media(min-width: 800px) {
