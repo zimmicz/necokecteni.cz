@@ -11,6 +11,11 @@ module.exports = {
         destination: '/knihy/:tag*',
         permanent: true,
       },
+      {
+        source: '/authors/:author*',
+        destination: '/autori/:author*',
+        permanent: true,
+      },
     ]
   },
 }
