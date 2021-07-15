@@ -10,8 +10,8 @@ export default function List({ posts }: {  posts: Array<Post> }) {
 
     return (
         <>
-            {chunks.map(([heroPost, ...otherPosts]) => (
-                <>
+            {chunks.map(([heroPost, ...otherPosts], index) => (
+                <div key={index}>
                     <HeroPost {...heroPost} />
                     <Grid>
                         {otherPosts.map(post => (
@@ -23,7 +23,7 @@ export default function List({ posts }: {  posts: Array<Post> }) {
                             />
                         ))}
                     </Grid>
-                </>
+                </div>
             ))}
         </>
     );

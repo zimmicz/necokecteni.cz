@@ -3,18 +3,11 @@ import styles from './index.module.css';
 import { Content } from '../Content';
 import { Header } from '../Header';
 
-type Props = {
-    children: {
-        content: React.ReactNode;
-        sidebar: React.ReactNode;
-    }
-};
-
-export const Layout = ({ children }: Props) => {
+export const Layout = ({ children }: React.PropsWithChildren<unknown>) => {
     return (
         <div className={styles.layout}>
             <Header className={styles.header} />
-            <Content className={styles.content}>{children.content}</Content>
+            <Content className={styles.content}>{children}</Content>
         </div>
     );
 };

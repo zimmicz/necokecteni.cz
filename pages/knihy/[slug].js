@@ -1,14 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
-import { getTags, getTagBySlug } from '../../lib/be-tags';
+import { Layout } from '../../components/Layout';
+import List from '../../components/List';
+import { getTags, getTagBySlug, getPostsByTag } from '../../lib/be-tags';
 
-const Tag = ({ tag }) => {
+const Tag = ({ tag, posts }) => {
     return (
         <>
             <Head>
                 <title>{tag}: seznam knih</title>
             </Head>
-            <div>hello world {tag}</div>
+            <Layout>
+                <List posts={posts} />
+            </Layout>
         </>
     );
 };
@@ -16,19 +20,22 @@ const Tag = ({ tag }) => {
 export default Tag;
 
 export const getStaticPaths = async () => {
-    const paths = await getTags();
+    const tags = await getTags();
 
     return {
-        paths,
+        paths: tags.map(tag => ({ params: { slug: tag.tag }})),
         fallback: false
     };
 };
 
-export const getStaticProps = async ({ params }) => {
-    const tag = await getTagBySlug(params.slug);
+export const getStaticProps = async ({ params: { slug } }) => {
+    const { tag, label } = await getTagBySlug(slug);
+    const posts = await getPostsByTag(tag);
+
     return {
         props: {
-            tag,
+            tag: label,
+            posts,
         },
     };
 };

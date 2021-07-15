@@ -16,6 +16,11 @@ module.exports = {
         destination: '/autori/:author*',
         permanent: true,
       },
+      {
+        source: '/index:slug(\\d{1,}).html',
+        destination: '/:slug',
+        permanent: true,
+      }
     ]
   },
 }

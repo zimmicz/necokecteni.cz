@@ -55,8 +55,18 @@ const getPostData = async (fullPath: string): Promise<{ id: string; contentHtml:
         contentHtml,
         ...<PostMetadata>matterResult.data,
         tags: [
-            ...matterResult.data.tags.map((tag: string) => ({ label: tag, link: `/knihy/${sanitize(tag)}`})),
-            { label: matterResult.data.author, link: `/autori/${sanitize(matterResult.data.author)}`},
+            ...matterResult.data.tags.map((tag: string) => (
+                {
+                    tag: sanitize(tag),
+                    label: tag,
+                    link: `/knihy/${sanitize(tag)}`
+                }
+            )),
+            {
+                tag: sanitize(matterResult.data.author),
+                label: matterResult.data.author,
+                link: `/autori/${sanitize(matterResult.data.author)}`
+            },
         ],
     };
 }
