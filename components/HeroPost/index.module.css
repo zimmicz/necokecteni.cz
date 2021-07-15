@@ -71,7 +71,6 @@
         font-size: clamp(2rem, -4.0000rem + 10.0000vw, 3rem);
         margin-top: 0;
         margin-bottom: .5rem;
-        padding-right: 1rem;
     }
 
     .titleAndTags {
@@ -83,8 +82,8 @@
     }
 
     .content {
-        padding-left: 1rem;
         font-size: clamp(1rem, -4.0000rem + 10.0000vw, 1.5rem);
+        padding-top: .5rem;
     }
 
     .content > p:first-child {

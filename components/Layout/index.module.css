@@ -4,11 +4,6 @@
     min-height: 100vh;
 }
 
-.sidebar {
-    background-color: #F9F9F9;
-    border-top: 1px solid var(--secondary-color);
-}
-
 .header {
     font-size: calc(1vw + 1.5rem);
     text-align: center;
@@ -17,7 +12,7 @@
 @media(min-width: 800px) {
     .layout {
         grid-template-rows: 300px 1fr;
-        grid-template-columns: 200px 1fr;
+        grid-template-columns: 1fr;
         padding: 0 1rem;
     }
 
@@ -29,19 +24,10 @@
         text-align: center;
     }
 
-    .sidebar {
-        background-color: unset;
-        border-top: 0;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
     .content {
         background-color: white;
         box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 3;
         justify-self: center;
         margin-bottom: 2rem;
