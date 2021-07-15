@@ -43,9 +43,10 @@
         box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
         grid-column-start: 2;
         grid-column-end: 3;
+        justify-self: center;
         margin-bottom: 2rem;
         margin-top: -2rem;
         max-width: 1000px;
-        padding: 2vw 5vw;
+        padding: 1rem 3rem;
     }
 }
