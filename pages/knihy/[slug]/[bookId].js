@@ -9,6 +9,8 @@ const Post = ({ postData }) => {
         <>
             <Head>
                 <title>{`${postData.author}: ${postData.title}`}</title>
+                <meta name="description" content={`${postData.author}: ${postData.title}`} />
+                <meta name="keywords" content={`${postData.title}, ${postData.tags.map(({ label }) => label).join(', ')}`} />
             </Head>
             <Layout>
                 <PostComponent className={styles.post} {...postData} />

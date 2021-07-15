@@ -9,6 +9,8 @@ const Tag = ({ tag, posts }) => {
         <>
             <Head>
                 <title>{tag}: seznam knih</title>
+                <meta name="description" content={`${tag}: seznam knih`} />
+                <meta name="keywords" content={`${tag}, ${posts.map(post => post.author).join(', ')}`} />
             </Head>
             <Layout>
                 <List posts={posts} />

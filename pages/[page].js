@@ -15,6 +15,8 @@ export default function Page({ posts, postCount }) {
         <div className="container">
             <Head>
                 <title>Něco ke čtení</title>
+                <meta name="description" content="Něco ke čtení je seznam dobrých knih, které stojí za to si přečíst." />
+                <meta name="keywords" content="knihy, čtení, četba, literatura" />
             </Head>
             <Layout>
                 <List posts={posts} />

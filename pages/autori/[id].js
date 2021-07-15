@@ -9,6 +9,8 @@ const Author = ({ posts }) => {
         <>
             <Head>
                 <title>{posts[0].author}: seznam knih</title>
+                <meta name="description" content={`${posts[0].author}: seznam knih`} />
+                <meta name="keywords" content={`${posts[0].author}, seznam knih, ${posts.map(post => post.title).join(', ')}`} />
             </Head>
             <Layout>
                 <List posts={posts} />

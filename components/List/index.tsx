@@ -10,7 +10,7 @@ export default function List({ posts }: {  posts: Array<Post> }) {
 
     return (
         <>
-            {chunks.map(([heroPost, ...otherPosts], index) => (
+            {chunks.map(([heroPost, ...otherPosts]) => (
                 <>
                     <HeroPost {...heroPost} />
                     <Grid>
