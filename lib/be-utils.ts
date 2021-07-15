@@ -17,8 +17,9 @@ export const getPosts = async (filter?: string) => {
     const promises = filenames.map(getPostData);
 
     const posts = await Promise.all(promises);
+    const sortedPosts = _.orderBy(posts, post => [(new Date(post.date)).getTime(), post.title], ['desc', 'asc']);
 
-    return posts;
+    return sortedPosts;
 }
 
 export const getPost = async ({ slug: authorId, bookId }: { slug: string; bookId: string }): Promise<ReturnType<typeof getPostData>> => {
