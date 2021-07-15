@@ -50,13 +50,13 @@ const getPostData = async (fullPath: string): Promise<{ id: string; contentHtml:
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
-    if (fullPath.includes('shakespeare')) {
-        console.log('getPostData', matterResult.data.title, `${sanitize(matterResult.data.author)}/${sanitize(matterResult.data.title)}`);
-    }
-
     return {
         id: `${sanitize(matterResult.data.author)}/${sanitize(matterResult.data.title)}`,
         contentHtml,
-        ...<PostMetadata>matterResult.data
+        ...<PostMetadata>matterResult.data,
+        tags: [
+            ...matterResult.data.tags.map((tag: string) => ({ label: tag, link: `/knihy/${sanitize(tag)}`})),
+            { label: matterResult.data.author, link: `/autori/${sanitize(matterResult.data.author)}`},
+        ],
     };
 }

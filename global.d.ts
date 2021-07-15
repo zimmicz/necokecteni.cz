@@ -2,7 +2,7 @@ type PostMetadata = {
     author: string;
     date: string;
     image?: string;
-    tags: Array<string>;
+    tags: Array<{ label: string; link: string }>;
     title: string;
 };
 
