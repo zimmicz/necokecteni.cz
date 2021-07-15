@@ -1,13 +1,13 @@
 import React from 'react';
 import { getAuthors, getPostsByAuthor } from '../../lib/be-authors';
 import { Layout } from '../../components/Layout';
-import { Post } from '../../components/Post';
+import List from '../../components/List';
 
 const Author = ({ posts }) => {
     return (
         <Layout>
             {{
-                content: posts.map(post => <Post {...post} />)
+                content: <List posts={posts} />
             }}
         </Layout>
     );
