@@ -11,9 +11,7 @@ const Author = ({ posts }) => {
                 <title>{posts[0].author}: seznam knih</title>
             </Head>
             <Layout>
-                {{
-                    content: <List posts={posts} />
-                }}
+                <List posts={posts} />
             </Layout>
         </>
     );
