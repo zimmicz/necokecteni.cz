@@ -1,15 +1,21 @@
 import React from 'react';
+import Head from 'next/head';
 import { getAuthors, getPostsByAuthor } from '../../lib/be-authors';
 import { Layout } from '../../components/Layout';
 import List from '../../components/List';
 
 const Author = ({ posts }) => {
     return (
-        <Layout>
-            {{
-                content: <List posts={posts} />
-            }}
-        </Layout>
+        <>
+            <Head>
+                <title>{posts[0].author}: seznam knih</title>
+            </Head>
+            <Layout>
+                {{
+                    content: <List posts={posts} />
+                }}
+            </Layout>
+        </>
     );
 }
 

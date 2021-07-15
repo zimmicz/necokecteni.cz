@@ -1,8 +1,16 @@
 import React from 'react';
+import Head from 'next/head';
 import { getTags } from '../../lib/be-tags';
 
 const Tag = ({ tag }) => {
-    return <div>hello world {tag}</div>;
+    return (
+        <>
+            <Head>
+                <title>{tag}: seznam knih</title>
+            </Head>
+            <div>hello world {tag}</div>
+        </>
+    );
 };
 
 export default Tag;
