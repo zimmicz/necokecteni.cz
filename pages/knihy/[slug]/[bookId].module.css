@@ -1,0 +1,13 @@
+.post {
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
+    padding-bottom: 1rem;
+}
+.post h2 {
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 2.5rem);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
