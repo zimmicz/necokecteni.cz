@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { getTags } from '../../lib/be-tags';
+import { getTags, getTagBySlug } from '../../lib/be-tags';
 
 const Tag = ({ tag }) => {
     return (
@@ -25,9 +25,10 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }) => {
+    const tag = await getTagBySlug(params.slug);
     return {
         props: {
-            tag: '1',
+            tag,
         },
     };
 };
