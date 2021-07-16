@@ -3,9 +3,10 @@ import List from '../components/List';
 import Pagination from '../components/Pagination';
 import { Layout } from '../components/Layout';
 import { getPosts } from '../lib/be-utils';
-import { generateFeed } from '../lib/rss.gen';
+import { generateFeed } from '../lib/rss-gen';
+import { getAuthorsByFirstLetters } from '../lib/be-authors';
 
-export default function Home({ posts, postCount }) {
+export default function Home({ authors, posts, postCount }) {
     return (
         <div className="container">
             <Head>
@@ -13,7 +14,7 @@ export default function Home({ posts, postCount }) {
                 <meta name="description" content="Něco ke čtení je seznam dobrých knih, které stojí za to si přečíst." />
                 <meta name="keywords" content="knihy, čtení, četba, literatura" />
             </Head>
-            <Layout>
+            <Layout authors={authors}>
                 <List posts={posts} />
                 {postCount > posts.length ? <Pagination next="/1" />: null}
             </Layout>
@@ -23,11 +24,13 @@ export default function Home({ posts, postCount }) {
 
 export const getStaticProps = async () => {
     const posts = await getPosts();
+    const authors = await getAuthorsByFirstLetters();
 
     generateFeed(posts);
 
     return {
         props: {
+            authors,
             posts: posts.slice(0, 10),
             postCount: posts.length,
         },
