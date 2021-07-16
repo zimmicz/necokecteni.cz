@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import _ from 'lodash';
+import { POSTS_PER_PAGE } from '../config';
 import { Layout } from '../components/Layout';
 import List from '../components/List';
 import Pagination from '../components/Pagination';
@@ -10,7 +11,7 @@ import { getAuthorsByFirstLetters } from '../lib/be-authors';
 export default function Page({ authors, posts, postCount }) {
     const { query: { page } } = useRouter();
     const previous = `/${_.toString(_.toInteger(page) - 1)}`;
-    const next = (_.toInteger(page) + 1) * 10 < postCount && `/${_.toString(_.toInteger(page) + 1)}`;
+    const next = (_.toInteger(page) + 1) * POSTS_PER_PAGE < postCount && `/${_.toString(_.toInteger(page) + 1)}`;
 
     return (
         <div className="container">
@@ -35,7 +36,6 @@ export default function Page({ authors, posts, postCount }) {
 }
 
 export const getStaticPaths = async () => {
-    const POSTS_PER_PAGE = 10;
     const posts = (await getPosts()).length;
     const pages = Math.ceil(posts / POSTS_PER_PAGE);
     const paths = Array.from({ length: pages }).map((_, index) => ({ params: { page: index.toString() }}));
@@ -54,7 +54,7 @@ export const getStaticProps = async ({ params }) => {
     return {
         props: {
             authors,
-            posts: posts.slice(page * 10, (page + 1) * 10),
+            posts: posts.slice(page * POSTS_PER_PAGE, (page + 1) * POSTS_PER_PAGE),
             postCount: posts.length,
         },
     };
