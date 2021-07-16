@@ -7,6 +7,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/feeds/atom.xml',
+        destination: '/feed.xml',
+        permanent: true,
+      },
+      {
         source: '/tags/:tag*',
         destination: '/knihy/:tag*',
         permanent: true,
