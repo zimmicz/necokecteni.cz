@@ -5,8 +5,9 @@ import { Layout } from '../components/Layout';
 import List from '../components/List';
 import Pagination from '../components/Pagination';
 import { getPosts } from '../lib/be-utils';
+import { getAuthorsByFirstLetters } from '../lib/be-authors';
 
-export default function Page({ posts, postCount }) {
+export default function Page({ authors, posts, postCount }) {
     const { query: { page } } = useRouter();
     const previous = `/${_.toString(_.toInteger(page) - 1)}`;
     const next = (_.toInteger(page) + 1) * 10 < postCount && `/${_.toString(_.toInteger(page) + 1)}`;
@@ -18,7 +19,7 @@ export default function Page({ posts, postCount }) {
                 <meta name="description" content="Něco ke čtení je seznam dobrých knih, které stojí za to si přečíst." />
                 <meta name="keywords" content="knihy, čtení, četba, literatura" />
             </Head>
-            <Layout>
+            <Layout authors={authors}>
                 <List posts={posts} />
                 {postCount > posts.length
                     ? (
@@ -47,10 +48,12 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
     const posts = await getPosts();
+    const authors = await getAuthorsByFirstLetters();
     const page = parseInt(params.page, 10);
 
     return {
         props: {
+            authors,
             posts: posts.slice(page * 10, (page + 1) * 10),
             postCount: posts.length,
         },
