@@ -4,11 +4,6 @@
     min-height: 100vh;
 }
 
-.header {
-    font-size: calc(1vw + 1.5rem);
-    text-align: center;
-}
-
 .content {
     padding: 1rem 3rem;
 }
@@ -18,14 +13,6 @@
         grid-template-rows: 300px 1fr;
         grid-template-columns: 1fr;
         padding: 0 1rem;
-    }
-
-    .header {
-        align-self: center;
-        font-size: calc(1vw + 2rem);
-        grid-column-start: 1;
-        grid-column-end: 3;
-        text-align: center;
     }
 
     .content {

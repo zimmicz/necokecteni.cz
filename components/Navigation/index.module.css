@@ -1,0 +1,9 @@
+.navigation {
+  position: absolute;
+  left: 1rem;
+  top: .5rem;
+}
+
+.navigation a {
+  color: white;
+}

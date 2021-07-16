@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import _ from 'lodash';
 import List from '../components/List';
 import Pagination from '../components/Pagination';
 import { Layout } from '../components/Layout';
 import { getPosts } from '../lib/be-utils';
+import { generateFeed } from '../lib/rss.gen';
 
 export default function Home({ posts, postCount }) {
     return (
@@ -23,6 +23,8 @@ export default function Home({ posts, postCount }) {
 
 export const getStaticProps = async () => {
     const posts = await getPosts();
+
+    generateFeed(posts);
 
     return {
         props: {
