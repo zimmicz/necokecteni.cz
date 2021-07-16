@@ -1,5 +1,7 @@
 .header {
     color: var(--secondary-color);
+    font-size: calc(1vw + 1.5rem);
+    text-align: center;
 }
 
 .header h1 {
@@ -14,5 +16,10 @@
 @media(min-width: 800px) {
     .header {
         color: #FDFFFC;
+        align-self: center;
+        font-size: calc(1vw + 2rem);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
     }
 }
