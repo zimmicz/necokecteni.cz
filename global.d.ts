@@ -10,3 +10,8 @@ type Post = {
     id: string;
     contentHtml: string;
 } & PostMetadata;
+
+type Author = {
+    author: string;
+    id: string;
+};

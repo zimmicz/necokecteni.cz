@@ -14,6 +14,10 @@ body {
     position: relative;
 }
 
+body.no-scrollbar {
+    overflow-y: hidden;
+}
+
 body::before {
     position: absolute;
     left: 0;
@@ -87,6 +91,10 @@ a:hover {
 h2 a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+button:not(disabled) {
+    cursor: pointer;
 }
 
 p {

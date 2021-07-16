@@ -1,0 +1,62 @@
+.container {
+  background-color: #1c305d;
+  color: white;
+  left: 0;
+  height: 100%;
+  overflow: auto;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.head {
+  align-items: center;
+  display: flex;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  padding-left: 1rem;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.head h3 {
+  flex-grow: 1;
+}
+
+.head .button {
+  height: max-content;
+  padding: .5rem;
+}
+
+.head .button:hover {
+  text-decoration: none;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container h3,
+.list div {
+  padding: 0 1rem;
+}
+
+.list h4 {
+  border-bottom: 1px solid white;
+}
+
+.list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
