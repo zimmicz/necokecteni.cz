@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import { getAuthors, getPostsByAuthor } from '../../lib/be-authors';
+import { getAuthorsByFirstLetters, getAuthors, getPostsByAuthor } from '../../lib/be-authors';
 import { Layout } from '../../components/Layout';
 import List from '../../components/List';
 
-const Author = ({ posts }) => {
+const Author = ({ authors, posts }) => {
     return (
         <>
             <Head>
@@ -12,7 +12,7 @@ const Author = ({ posts }) => {
                 <meta name="description" content={`${posts[0].author}: seznam knih`} />
                 <meta name="keywords" content={`${posts[0].author}, seznam knih, ${posts.map(post => post.title).join(', ')}`} />
             </Head>
-            <Layout>
+            <Layout authors={authors}>
                 <List posts={posts} />
             </Layout>
         </>
@@ -32,9 +32,11 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
     const posts = await getPostsByAuthor(params.id);
+    const authors = await getAuthorsByFirstLetters();
 
     return {
         props: {
+            authors,
             posts,
         },
     };
