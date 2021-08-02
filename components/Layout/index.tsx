@@ -10,7 +10,7 @@ export const Layout = ({ children, authors }: React.PropsWithChildren<{ authors?
     return (
         <div className={styles.layout}>
             <Navigation>
-                <BlockLink to="/feed.xml">RSS kanál</BlockLink>
+                <a href="/feed.xml">RSS kanál</a>
                 {authors ? <AuthorList authors={authors} /> : null}
             </Navigation>
             <Header />
